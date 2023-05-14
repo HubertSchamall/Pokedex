@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ul {
+    list-style: none    ;
+   }
+
+body {
+    font-family: 'poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5e5b5bad;
+    color: #333333;
+     }
+
+body.dark-mode {
+    background-color: #212121;
+    color: #f5f5f5;
+               }
+
+header {
+    background-color:none;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+       }
+
+header .logo, header .button-image{
+    width: 30px;
+                                  }
+
+header #changing-theme-button {
+    cursor: pointer;
+    border: none;
+    background: none;
+                              }
+
+header .logo:hover, header .button-image:hover {
+    transform: scale(1.05);
+    transition: 0.2 ease-in-out;
+                                              }
+
+main {
+    padding: 25px;
+     }
+
+.pokemon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+              }
+
+.pokemon-card {
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2 ease-in-out;
+              }
+
+main .pokemon-card:hover {
+    background-color: #96d9d6;
+    transform: scale(1.05);
+                         }
+
+.dark-mode .pokemon-card {
+    background-color: #a8a8a8;
+                               }
+
+main .pokemon-card .informations {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+                                 }
+
+main .pokemon-card .informations span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+                                      }
+
+main .pokemon-card .gif {
+    width: 90px;
+    height: 90px;
+                        }
+
+main .pokemon-card .types {
+    display: flex;
+    gap: 15px;
+    padding: 8px;
+    border-radius: 10px;
+                          }
+
+.grass-type {
+    background-color: #7ac74c;
+    padding: 8px;
+    border-radius: 10px;
+            }
+
+.poison-type {
+    background-color: #df67ddfb;
+    padding: 8px;
+    border-radius: 10px;
+             }
+
+.fire-type {
+    background-color: #ee8130;
+    padding: 8px;
+    border-radius: 10px;
+             }
+
+.water-type {
+    background-color: #6390f0;
+    padding: 8px;
+    border-radius: 10px;
+            }
+
+.bug-type {
+    background-color: #a6b91a;
+    padding: 8px;
+    border-radius: 10px;
+          }
+
+.flying-type {
+    background-image: linear-gradient(to bottom, #3dc7ef 50%, #bcb8b7 50%);
+    padding: 8px;
+    border-radius: 10px;
+             }
+
+main .description {
+    max-height: 80px;
+    overflow: scroll;
+    overflow-x: hidden;
+    font-size: 14px;
+    padding-right: 10px;
+                  }
